@@ -1,6 +1,6 @@
 # personal-dashboard
 
-This repository is for experimental purposes. Nothing here should be considered stable or production-ready.
+A personal dashboard web app built with Flask that displays real-time weather data and upcoming Google Calendar events in one place. It pulls current conditions, hourly forecasts, and a 5-day outlook from OpenWeatherMap, and shows your next 10 calendar events using the Google Calendar API.
 
 ---
 
