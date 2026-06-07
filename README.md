@@ -1,4 +1,4 @@
-# playground1
+# personal-dashboard
 
 This repository is for experimental purposes. Nothing here should be considered stable or production-ready.
 
