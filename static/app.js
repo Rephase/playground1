@@ -29,6 +29,15 @@ async function loadWeather() {
       <div class="weather-meta">Feels like ${c.feels_like}&deg; &middot; Humidity ${c.humidity}% &middot; ${data.location}</div>
     `;
 
+    const hourlyEl = document.getElementById("weather-hourly");
+    hourlyEl.innerHTML = data.hourly.map(h => `
+      <div class="forecast-day">
+        <div class="day-label">${h.time}</div>
+        <img src="https://openweathermap.org/img/wn/${h.icon}.png" alt="${h.description}" />
+        <div class="temps">${h.temp}&deg;</div>
+      </div>
+    `).join("");
+
     forecastEl.innerHTML = data.forecast.map(d => `
       <div class="forecast-day">
         <div class="day-label">${d.date.split(",")[0]}</div>
